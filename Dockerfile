@@ -31,4 +31,4 @@ VOLUME ["/opt/cardano-sl/state-explorer-${CARDANO_NET}"]
 
 # Setup cardano-sl
 ENV CARDANO_NET ${CARDANO_NET}
-RUN nix-build -A connectScripts.${CARDANO_NET}.explorer -o connect-explorer-to-${CARDANO_NET}
+# RUN nix-build -A connectScripts.${CARDANO_NET}.explorer -o connect-explorer-to-${CARDANO_NET}
